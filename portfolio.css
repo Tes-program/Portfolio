@@ -34,6 +34,7 @@ ul{
        margin-right: 0.9em;
        padding: 3px;
        transition: pink 1.5s ease-in-out;
+       font-size: 1.5em;
     }
     li a{
         text-decoration: none;
@@ -128,7 +129,7 @@ ul{
     margin-top: -15px;
 }
 .description p{
-    font-size: 1.1em;
+    font-size: 1.3em;
     width: 90%;
 }
 .description p a{
@@ -198,6 +199,7 @@ ul{
                 gap: 2em;
                 height: max-content;
                 margin-top: 2em;
+                font-size: 1.1em;
             }
             .skills div{
                 padding-left: 2em;
@@ -504,7 +506,15 @@ ul{
          @media (max-width: 280px){
            html{
             width: 100%;
-            font-size: 60.5%;
+           }
+           section{
+            padding: 2em;
+           }
+           nav ul li{
+            font-size: 1.3em;
+           }
+           nav{
+            width: fit-content;
            }
            .angel img{
             width: 18em;
@@ -518,4 +528,35 @@ ul{
            ul{
             justify-content: flex-start;
            }
+         }
+         @media (min-width:1700px){
+             .angel img{
+                width: 35em;
+             }
+             html{
+                font-size: 25px;
+             }
+             .gallery{
+                display: grid;
+                grid-template-columns: repeat(4, 3fr);
+                grid-template-rows: auto;
+                width: max-content;
+            }
+            .project{
+                width: 18em;
+            }
+            .circle{
+                width: 6em;
+                border-radius: 80px;
+            }
+            #contact > h1{
+                font-size: 3.1em;
+                margin-left: 0.3em;
+            }
+            input, textarea{
+               font-size: 1.7em;
+            }
+            .icons > p{
+                font-size: 1.3em;
+            }
          }

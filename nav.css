@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    font-size: 20px;
+}
 body{
     background-color: rgb(19, 19, 19);
     color: white;
