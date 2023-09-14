@@ -507,6 +507,16 @@ ul{
            html{
             width: 100%;
            }
+           .skills > div > p{
+            width: 100%;
+            font-size: 1.3em;
+           }
+           .description p{
+            font-size: 1.3em;
+           }
+           figcaption{
+            font-size: 1.1em;
+           }
            main{
             padding: 0;
             margin: 0;
