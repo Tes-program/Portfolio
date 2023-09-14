@@ -507,6 +507,10 @@ ul{
            html{
             width: 100%;
            }
+           main{
+            padding: 0;
+            margin: 0;
+           }
            section{
             padding: 2em;
            }
@@ -514,10 +518,14 @@ ul{
             font-size: 1.3em;
            }
            nav{
-            width: fit-content;
+            width: 35em;
            }
            .angel img{
             width: 18em;
+           }
+           .name, .typewriter{
+            margin-right: 0;
+            letter-spacing: 0;
            }
            #star{
             width: 6em;
@@ -526,7 +534,7 @@ ul{
            font-size: 0.2em;
            }
            ul{
-            justify-content: flex-start;
+            justify-content: space-between;
            }
          }
          @media (min-width:1700px){
