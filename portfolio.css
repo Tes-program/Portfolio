@@ -517,8 +517,11 @@ ul{
            nav ul li{
             font-size: 1.3em;
            }
-           nav{
-            width: 35em;
+           nav, hr, .marquee{
+            width: 32em;
+           }
+           .marquee{
+            width: 30.5em;
            }
            .angel img{
             width: 18em;
@@ -527,6 +530,12 @@ ul{
             margin-right: 0;
             letter-spacing: 0;
            }
+           .project{
+            width: 15em;
+           }
+          .second-hr{
+            width: 34em;
+          }
            #star{
             width: 6em;
            }
