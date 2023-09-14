@@ -115,6 +115,10 @@ ul{
          .name-container{
             display: inline-block;
  }
+ .project a{
+    color: white;
+    text-decoration: none;
+ }
  .name{
     margin-top: 2em;
     padding: 0;
