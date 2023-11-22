@@ -303,6 +303,17 @@ ul{
            form{
             margin-left: 2em;
            }
+           form input{
+            outline: none;
+            color: white;
+           }
+           form textarea{
+            outline: none;
+            color: white;
+           }
+           #contact-me:hover{
+             background-color: rgb(255, 255, 255);
+           }
            #contact h1{
             margin-left: 0.8em;
             font-size: 2.5em;
