@@ -460,15 +460,20 @@ ul{
                 margin-top: 0.2em;
                 padding: 0;
             }
+            .gallery-container, .special-container{
+                grid-template-columns: 1fr;
+            }
             .gallery{
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns:repeat(2, 1fr);
                 grid-template-rows: auto auto;
             }
             figcaption{
                 font-size: 1.1em;
             }
-           
+           .circles{
+            display: none;
+           }
          }
          @media(max-width: 550px){
             #skills{
@@ -615,3 +620,45 @@ ul{
                 font-size: 1.3em;
             }
          }
+         .subject{
+            text-align: center;
+            margin: 1em auto;
+            width: 50%;
+            border: 1px solid white;
+         }
+         /* Specific styles for the special gallery-container */
+
+
+.special-container .gallery {
+    position: relative;
+   
+}
+
+
+/* Initial styles for cover, but not shown */
+.special-container .gallery .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent cover */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show cover only on hover of the gallery */
+.special-container .gallery:hover .cover {
+    opacity: 1;
+}
+
+          @media(min-width: 780px){
+            .special-container .gallery{
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
