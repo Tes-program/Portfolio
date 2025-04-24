@@ -531,16 +531,22 @@ ul{
             
          }
          @media(max-width: 480px){
+            .gallery-container{
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr;
+            }
             .gallery{
                 display: grid;
                 grid-template-columns: 1fr;
+                width: 100%;
                 grid-template-rows: auto auto;
             }
             .circle{
-                height: 90%;
+               display: none;
             }
             .two{
-                height: 60%;
+              display: none;
             }
          }
          @media(max-width: 465px){
@@ -679,3 +685,143 @@ ul{
               grid-template-columns: repeat(2, 1fr);
             }
           }
+
+          /* General styles for the page */
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px; /* Default text size for body */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  /* Ensure the figure and caption are centered */
+  .project {
+    width: 100%;
+    max-width: 300px; /* Maximum width for each project */
+    text-align: center; /* Center the figure and caption */
+    margin: 0 auto; /* Center the project in the container */
+  }
+  
+  /* Style the figcaption */
+  figcaption {
+    font-size: 14px; /* Default size for captions */
+    color: #333; /* Ensure good contrast for readability */
+    margin-top: 10px; /* Space between image and caption */
+  }
+  
+  /* Make the gallery a flexbox */
+  .gallery-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 20px; /* Space between the items */
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    /* Reduce the padding on mobile */
+    .gallery-container {
+      padding: 10px;
+    }
+  
+    .gallery {
+      justify-content: center; /* Center the gallery on mobile */
+      width: 100%;
+    }
+  
+    .project {
+      width: 100%; /* Full width for projects on mobile */
+      max-width: 100%; /* Ensure no overflow */
+    }
+  
+    figcaption {
+      font-size: 14px; /* Smaller font size for captions on mobile */
+    }
+  }
+  
+  /* Text sizes for other sections */
+  .welcome h1, .name {
+    font-size: 28px; /* Larger parent text for the name */
+  }
+  
+  .typewriter h1 {
+    font-size: 24px; /* Smaller font size for typewriter text */
+  }
+  
+  .description p {
+    font-size: 14px; /* Text between 12px, 14px, or 16px as requested */
+  }
+  
+  .skills h1 {
+    font-size: 16px; /* Text size for skill titles */
+  }
+  
+  .skills p {
+    font-size: 14px; /* Text size for skill descriptions */
+  }
+  
+  /* For projects section title */
+  #projects .subject h1 {
+    font-size: 24px; /* Title size for the projects section */
+  }
+  
+  /* Adjust text sizes for smaller screen sizes */
+  @media (max-width: 480px) {
+    .name {
+      font-size: 24px; /* Slightly smaller font size for mobile */
+    }
+  
+    .typewriter h1 {
+      font-size: 16px; /* Adjust for mobile */
+    }
+  
+    .description p {
+      font-size: 14px; /* Smaller text for the description on mobile */
+    }
+  }
+/* Centering the figure and figcaption */
+.project {
+  width: 100%;
+  max-width: 300px; /* Maximum width for each project */
+  text-align: center; /* Center both the figure and caption */
+  margin: 20px auto; /* Center the project in the container */
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  margin: 0 auto; /* Center the image */
+}
+
+/* Style the figcaption */
+figcaption {
+  font-size: 14px; /* Default size for captions */
+  color: #f1e6e6; /* Ensure good contrast for readability */
+  margin: 0 auto; /* Space between image and caption */
+  text-align: center;
+  margin-top: 10px;
+  width: 100%; /* Center the caption text */
+}
+.name{
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.typewriter{
+    margin-bottom: 30px;
+}
+.description p{
+    font-size: 16px;
+}
+  
