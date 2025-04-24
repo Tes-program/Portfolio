@@ -248,42 +248,57 @@ ul{
             margin: 0;
             grid-column: 1;
         }
+        
         .project{
             margin: 10px 0;
             text-align: center;
             break-inside: avoid-column;
-            width: calc(33.33% -40px);
+            width: calc(33.33% - 40px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures the content is spaced out evenly */
         }
+        
         .project img{
-            max-width: 100%;
-            height: auto;
+            width: 15em;
+            height: 10em;
+            border-radius: 10px;
             transition: transform 0.3s ease-in-out;
-            filter: grayscale(90%);
         }
+        
         figcaption{
             font-size: 0.98em;
             margin-top: 10px;
             border: 1px solid white;
-            border-radius: 30px;
-            padding: 1.3em;
+            width: 15em;
+            height: 5em;
+            display: flex;
+            align-items: center; /* Vertically aligns content inside the figcaption */
+            justify-content: center; /* Centers the content horizontally */
+            flex-grow: 1; /* Makes the figcaption grow to fill available space */
         }
+        
         figcaption:hover{
             background-color: white;
             color: black;
         }
+        
         .project img:hover{
             transform: scale(1.08);
             filter: grayscale(10%);
         }
+        
         .gallery-container{
             display: grid;
             grid-template-columns: 3fr 1fr;
         }
+        
         .circles{
             grid-column: 2;
             column-count: 2;
             margin: 2em;
         }
+        
         .circle{
             width: 3em;
             height: 15em;
@@ -292,10 +307,12 @@ ul{
             transform: rotate(180deg);
             break-inside: avoid-column;
         }
+        
         .one{
             height: 30em;
             background-color: white;
         }
+        
         .contact-container{
             column-count: 2;
             column-gap: 2em;
