@@ -38,7 +38,8 @@ font-family: 'Poppins', sans-serif;
 	box-sizing:border-box;
 }
 body{
-	font-family: 'Montserrat', sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
 	font-size:16px;
 	color: #678173;
 	background: #fff;
@@ -58,7 +59,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	color:#243127;
     font-size: 16px;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Raleway", sans-serif;
 	text-transform: capitalize;
 }
 p {
@@ -66,7 +67,7 @@ p {
 	line-height:1.8;
 	color:#32463b;
 	font-size:14px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 img{border:none;max-width:100%; height:auto;}
 ul{
